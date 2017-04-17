@@ -10,7 +10,7 @@ $(document).ready(function(){
 		function videoPlay(){
 		  video.play();
 		}
-		setTimeout(videoPlay, 2000);
+		setTimeout(videoPlay, 1200);
 
 		var headerContent = new TimelineMax();
 
