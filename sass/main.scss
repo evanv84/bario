@@ -110,7 +110,7 @@ body {
 	@include breakpoint($tablet) {
 		@include container(90%);
 	}
-	overflow: visible; 
+	//overflow: visible; 
 }
 
 #intro {
@@ -365,7 +365,7 @@ body {
 	
 }
 
-.video {
+#video {
 	background: url("../img/video-bg.jpg") center center no-repeat;
 	@include bgs(cover);
 	height: 100vh;
@@ -395,14 +395,25 @@ body {
 			top: 50%;
 			left: 50%;
 			@include transform(translate(-50%, -50%));
-			max-width: 100%;
+			width: 100%;
 			text-align: center;
-			img {
+			.btn-watch-arrow {
+				display: inline-block;
+				width: 70px;
+				height: 70px;
 				border: 2px solid $white;
+				margin-bottom: 1rem;
 				-webkit-border-radius: 50%;
 				        border-radius: 50%;
-		        padding: 1rem 1.56rem;
-		        margin-bottom: 1rem;
+				background: url(../img/arrow-right.svg) center no-repeat;
+				@include bgs(30%);
+				@include tr(0.6s);
+				
+				&:hover {
+					background-color: #FFF;
+					@include bgs(33%);
+					@include tr(0.6s);
+				}
 			}
 			p {
 				font-size: 2rem;
@@ -417,6 +428,7 @@ body {
 	background-color: $black;
 	padding: 5rem 0;
 	border-bottom: 1px solid $gray;
+	height: auto;
 	.container {
 		.top {
 			padding-bottom: 3rem;
@@ -442,7 +454,7 @@ body {
 				padding-bottom: 1rem;
 				position: relative;
 				z-index: 35;
-				height: 400px;
+				height: 300px;
 				img {
 					max-width: 100%;
 				}
@@ -452,7 +464,7 @@ body {
 					@include tr(0.5s);
 					position: absolute;
 					z-index: 39;
-					width: 50%;
+					width: 220px;
 					left: 48%;
 					height: auto;
 					top: 0;
@@ -464,7 +476,7 @@ body {
 					@include tr(0.5s);
 					position: absolute;
 					z-index: 38;
-					width: 25%;
+					width: 150px;
 					left: 13%;
 					height: auto;
 					top: 20%;
@@ -474,7 +486,7 @@ body {
 					@include tr(0.5s);
 					position: absolute;
 					z-index: 38;
-					width: 25%;
+					width: 150px;
 					left: 82%;
 					height: auto;
 					top: 20%;
