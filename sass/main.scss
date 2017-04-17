@@ -543,59 +543,35 @@ body {
 	}
 }
 
-.features {
-	background: url(../img/feat-bg.jpg) center center no-repeat;
-	@include bgs(cover);
-	padding: 5rem 0;
-	height: 800px;
-	border-bottom: 10px solid $red;
-	.container {
-		position: relative;
-		height: 800px;
-		.feat-title {
-			h2 {
-				font-size: 5rem;
-				color: $white;
-			}
-			span {
-				font-size: 2rem;
-				color: $red;
-			}
-		}
-		.feat-points {
-			padding: 0 5rem;
-			position: absolute;
-			bottom: 18%;
-			width: 100%;
-			.point {
-				@include with-layout($seven-grid) {
-				      @include span(1);
-				    }
-				img {
-					max-width: 100%;
-					display: block;
-					margin: 0 auto 1rem;
-				}
-				p {
-					color: $white;
-					text-align: center;
-					
-				}
-			}
-		}
-	}
-}
+
 
 .history {
 	background: url(../img/history-bg.jpg) center center no-repeat;
 	@include bgs(cover);
+	height: 100vh;
+	border-bottom: 15px solid $red;
+	position: relative;
+	
+	.logo {
+		position: absolute;
+		top: 10%;
+		left: 5%;
+		width: 200px;
+	}
+
+	.btn-preorder {
+		position: absolute;
+		top: 10%;
+		right: 5%;
+	}
 	.container {
-		height: 600px;
+		height:100vh;
 		position: relative;
 		.history-desc {
 			@include span(6);
 			position: absolute;
-			bottom: 15%;
+			top: 50%;
+			@include transform(translateY(-50%));
 			h2 {
 				color: $white;
 				font-size: 3rem;
@@ -604,15 +580,6 @@ body {
 			p {
 				color: darken($white, 30);
 				font-size: 1.5rem;
-			}
-		}
-		.history-scroll {
-			position: absolute;
-			right: 0;
-			top: 50%;
-			@include transform(translateY(-50%));
-			img {
-				width: 60px;
 			}
 		}
 	}
@@ -697,7 +664,9 @@ body {
 footer {
 	text-align: center;
 	padding: 5rem 0;
-	background: #000;
+	height: 100vh;
+	background: url(../img/footer-bg.jpg) bottom center no-repeat;
+	@include bgs(cover);
 	a {
 		text-decoration: none;
 		img {
