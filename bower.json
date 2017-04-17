@@ -1,0 +1,22 @@
+{
+  "name": "bario.pro",
+  "description": "",
+  "main": "index.html",
+  "keywords": [
+    "coffee",
+    "machine",
+    "espresso"
+  ],
+  "authors": [
+    "krem.design"
+  ],
+  "license": "MIT",
+  "homepage": "krem.design",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

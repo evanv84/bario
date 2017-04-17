@@ -1,0 +1,35 @@
+@-webkit-keyframes bAnimation {
+	0%, 100%  { 
+		fill: darken($red, 30);
+	}
+	50%   { 
+		fill: #f70006;
+	}
+
+}
+@-moz-keyframes bAnimation {
+	0%, 100%  { 
+		fill: darken($red, 30);
+	}
+	50%   { 
+		fill: #f70006;
+	}
+}
+@-o-keyframes bAnimation {
+	0%, 100%  { 
+		fill: darken($red, 30);
+	}
+	50%   { 
+		fill: #f70006;
+	}
+
+}
+@keyframes bAnimation {
+	0%, 100%  { 
+		fill: darken($red, 30);
+	}
+	50%   { 
+		fill: #f70006;
+	}
+
+}

@@ -1,0 +1,192 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Bario</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="js/pace.min.js"></script>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.min.css">
+        <script src="https://use.fontawesome.com/97c414d8d5.js"></script>
+    </head>
+    <body>
+        <header id="intro">
+            <div class="container">
+                <div class="intro--circle" id="intro-play-btn">
+                    <div class="intro--circle-inner"></div>
+                    <p class="press">Press Gently</p>
+                    <svg version="1.1" id="B-symbol" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 67 78.5" width="64" enable-background="new 0 0 67 78.5" xml:space="preserve">
+                    <path id="b-logo" fill="#ED1D24" d="M25.9,23.1h18.8c3,0,5.8,0.6,8.5,1.7c2.7,1.1,4.9,2.9,7.1,4.8c2.2,2,3.9,4.3,4.9,7.6
+                        c0.9,3,1.8,6.2,1.8,9.9v7.5c0,3.5-0.7,6.8-2.1,9.7c-1.4,2.9-3.2,5.5-5.4,7.6c-2.2,2.1-4.7,3.7-7.5,4.9c-2.8,1.2-5.6,1.8-8.4,1.8
+                        H23.2c-3,0-5.9-0.6-8.6-1.8c-2.8-1.2-5.3-2.8-7.4-4.9c-2.2-2.1-3.9-4.6-5.2-7.6C0.6,61.4,0,58.1,0,54.6V0h8v23.1v6.7v23.9
+                        c0,2.7,0.5,5.1,1.5,7.3c1,2.2,2.3,4.1,3.9,5.8c1.6,1.6,3.4,2.9,5.5,3.8c2.1,0.9,4.2,1.3,6.4,1.3h16.7c2.2,0,4.3-0.4,6.4-1.3
+                        c2.1-0.9,3.9-2.1,5.5-3.8c1.6-1.6,2.8-3.5,3.8-5.8c1-2.2,1.5-4.7,1.5-7.3v-6.1c0-5.3-1.5-9.5-4.4-12.9c-2.9-3.3-7.2-5-12.8-5
+                        c0,0-13.7,0-15.9,0L25.9,23.1z"/>
+                    </svg>
+                </div>
+                <video width="100%" id="intro-video">
+                  <source src="video/video-bg-intro.mp4" type="video/mp4">
+                    Sorry, your browser doesn't support that kind of video.
+                </video>
+                <div class="header-content">
+                    <div class="logo">
+                        <img src="img/logo-white.svg" alt="">
+                        <form action="">
+                            <select name="language" id="setLang">
+                                <option value="eng">ENG</option>
+                                <option value="RUS">RUS</option>
+                            </select>
+                        </form>
+                    </div>
+                    <a href="#" class="btn btn-preorder">Preorder NOW</a>
+                    <h1><span class="left">Professional</span><span class="right">Coffee with You</span></h1>
+                    <a href="#" class="btn btn-watch">Watch the Video</a>
+                    <a href="#video" id="scrollDown"></a>
+                </div>
+            </div>
+        </header>
+
+         <section id="video" class="video">
+            <div class="container">
+                <div class="top">
+                    <div class="logo">
+                        <img src="img/logo-white.svg" alt="">
+                    </div>
+                    <div class="cross">
+                        <a href="#"><img src="img/cross.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="video-main">
+                    <img src="img/arrow-r.png" alt="">
+                    <p>Watch the Video</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="specification">
+            <div class="container">
+                <div class="top">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="order">
+                        <a href="#" class="btn">Preorder Now</a>
+                    </div>
+                </div>
+                <div class="machines-spec slider-desc">
+                    <div>
+                        <h2>Espresso Mania</h2>
+                        <div class="spec-point">
+                            <img src="img/spec-1.png" alt="">
+                            <p>coffee output</p>
+                        </div>
+                        <div class="spec-point">
+                            <img src="img/spec-2.png" alt="">
+                            <p>preparation time</p>
+                        </div>
+                        <div class="spec-point">
+                            <img src="img/spec-3.png" alt="">
+                            <p>coffee output</p>
+                        </div>
+                        <div class="spec-point">
+                            <img src="img/spec-4.png" alt="">
+                            <p>preparation time</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="machines">
+                    <div class="machines-img">                      
+                        <img src="img/machine.png" alt="" data-machine="1" class="left-side blur 1">                 
+                        <img src="img/machine.png" alt="" data-machine="2" class="active no-blur 2">
+                        <img src="img/machine.png" alt="" data-machine="3" class="right-side blur 3">
+                    </div>
+                    <div class="arrow-l">
+                        <img src="img/arrow-l-w.png" alt="" id="arrow-l">
+                    </div>
+                    <div class="arrow-r">
+                        <img src="img/arrow-r-w.png" alt="" id="arrow-r">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="history">
+            <div class="container">
+                <div class="history-desc">
+                    <h2>History of Creation</h2>
+                    <p>The new Mac Pro is muscle through and through, starting with the new-generation Intel Xeon E5, available with 4, 6, 8, or 12 cores of processing power on a single die. And with up to 30MB of L3 cache, 40GB/s of PCI Express gen 3 bandwidth, and 256-bit-wide floating-point instructions, you’ll never be at a loss for speed.</p>
+                </div>
+                <div class="history-scroll">
+                    <img src="img/arrow-h.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts-l">
+                    <h2>Contacts <span>24/7</span></h2>
+                    <div class="form">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="E-mail">
+                        <input type="text" placeholder="Telephone">
+                        <a href="#" class="btn1">Send</a>
+                    </div>
+                    <div class="cont-offer">
+                        <p>Leave your email when you're ready to get your Bario</p>
+                    </div>
+                    <div class="download">
+                        <a href="#">Download pdf</a>
+                    </div>
+                    <div class="follow">
+                        <p>Follow us
+                            <span class="round-1">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                            <span class="round-1">
+                                <i class="fa fa-instagram"></i>
+                            </span>
+                            <span class="round-1">
+                                <i class="fa fa-pinterest-p"></i>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <footer>
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </footer>
+
+        
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+
+        <!-- TweenMax -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/TextPlugin.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+        <!-- Other scripts -->
+        <script src="js/slick.min.js"></script>
+        <script src="js/smoothscroll.min.js"></script>
+        <script src="js/main.min.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

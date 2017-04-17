@@ -1,0 +1,52 @@
+@-webkit-keyframes circleGlowInner {
+	0%, 100%  { 
+		-webkit-box-shadow: inset 0px 0px 2px 0px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 0px 2px 0px rgba(255,255,255,1);
+	box-shadow: inset 0px 0px 2px 0px rgba(255,255,255,1);
+	}
+	50%   { 
+	-webkit-box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+	box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+	}
+
+}
+@-moz-keyframes circleGlowInner {
+	0%, 100%  { 
+	-webkit-box-shadow: inset 0px 0px 2px 0px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 0px 2px 0px rgba(255,255,255,1);
+	box-shadow: inset 0px 0px 2px 0px rgba(255,255,255,1);
+	}
+	50%   { 
+	-webkit-box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+	box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+	}
+
+}
+@-o-keyframes circleGlowInner {
+	0%, 100%  { 
+		-webkit-box-shadow: inset 0px 0px 2px 0px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 0px 2px 0px rgba(255,255,255,1);
+	box-shadow: inset 0px 0px 2px 0px rgba(255,255,255,1);
+	}
+	50%   { 
+	-webkit-box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+	box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+	}
+
+}
+@keyframes circleGlowInner {
+	0%, 100%  { 
+		-webkit-box-shadow: inset 0px 0px 2px 0px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 0px 2px 0px rgba(255,255,255,1);
+	box-shadow: inset 0px 0px 2px 0px rgba(255,255,255,1);
+	}
+	50%   { 
+  	-webkit-box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+	box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,1);
+	}
+
+}
