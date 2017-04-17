@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 		function showScrollbar(){
 			$('html').addClass('show-scrollbar');
-			$(window).animate({scrollTop(0)});
+			// $(window).animate({scrollTop(0)});
 		}
 		setTimeout(showScrollbar, 31000);
 		
