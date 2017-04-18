@@ -7,5 +7,5 @@ $gray: #484747;
 // Media queries
 $phone: (max-width: 480px);
 $tablet: (max-width: 1020px);
-$desktop: (max-width: 1600px);
+$desktop: (min-width: 1500px);
 $large: (min-width: 1920px);

@@ -587,7 +587,7 @@ body {
 
 .pre-order {
 	background-color: $white;
-	padding: 2rem 0;
+	padding: 100px 0;
 	.container {
 		h2 {
 			text-align: center;
@@ -600,6 +600,29 @@ body {
 				padding: 1rem;
 				@include span(4);
 				text-align: center;
+				position: relative;
+				&:after {
+					cursor: pointer;
+					content: "";
+					position: absolute;
+					top: 0;
+					right: 20px;
+					width: 50px;
+					height: 50px;
+					-webkit-border-radius: 50%;
+					        border-radius: 50%;
+					background: url(../img/pdf-icon-red.png) center no-repeat;
+					@include bgs(40%);
+				}
+
+				&:hover {
+					&:after {
+						background-color: $red;
+						background-image: url(../img/pdf-icon-white.png);
+						background-position: center;
+						background-repeat: no-repeat;
+					}
+				}
 				img {
 					max-width: 70%;
 					height: 300px;
@@ -644,15 +667,17 @@ body {
 
 footer {
 	text-align: center;
-	padding: 5rem 0;
-	height: 100vh;
+	padding: 5rem 0 320px;
 	background: url(../img/footer-bg.jpg) bottom center no-repeat;
 	@include bgs(cover);
-	a {
-		text-decoration: none;
-		img {
-			max-width: 100%;
-			margin-bottom: 4rem;
+	@include breakpoint($desktop) {
+		padding-bottom: 50vh;
+	}
+	svg {
+		margin-bottom: 240px;
+		
+		@include breakpoint($desktop) {
+			margin-bottom: 150px;
 		}
 	}
 	.ftr-nav {
