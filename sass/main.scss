@@ -361,8 +361,7 @@ body {
 				}
 			}
 		}
-	}
-	
+	}	
 }
 
 #video {
@@ -426,12 +425,13 @@ body {
 
 .specification {
 	background-color: $black;
-	padding: 5rem 0;
+	padding: 2rem 0;
 	border-bottom: 1px solid $gray;
-	height: auto;
+	height: 100vh;
 	.container {
 		.top {
-			padding-bottom: 3rem;
+			padding-bottom: 2rem;
+			overflow: auto;
 			.logo {
 				@include span(6);
 				img {
@@ -468,7 +468,7 @@ body {
 					left: 48%;
 					height: auto;
 					top: 0;
-					max-width: 43%;
+					max-width: 32%;
 
 				}
 				.left-side {
@@ -585,75 +585,56 @@ body {
 	}
 }
 
-.contacts {
-	background: url(../img/contacts-bg.jpg) center center no-repeat;
-	@include bgs(cover);
-	padding: 5rem 0;
+.pre-order {
+	background-color: $white;
+	padding: 2rem 0;
 	.container {
-		.contacts-l {
-			@include span(3);
-			h2 {
-				color: $white;
-				font-size: 3rem;
-				span {
-					color: $red;
-				}
-			}
-			.form {
-				padding: 2rem 0;
-				input {
-					width: 100%;
-					background-color: $black;
-					padding: 0.5rem;
-					-webkit-border-radius: 8px;
-					        border-radius: 8px;
+		h2 {
+			text-align: center;
+			font-size: 3rem;
+			margin-bottom: 2rem;
+		}
+		.order-container {
+			@include container(70%);
+			.order-col {
+				padding: 1rem;
+				@include span(4);
+				text-align: center;
+				img {
+					max-width: 70%;
+					height: 300px;
 					margin-bottom: 1rem;
 				}
-			}
-			.cont-offer {
 				p {
-					padding: 1rem 0;
-					color: $white;
-					font-size: 2rem;
+					margin-bottom: 0.7rem;
 				}
-			}
-			.download {
-				a {
-					font-size: 2rem;
-					color: $white;
-					&:before {
-				      content: "\f1c1 ";
-				      font-family: FontAwesome;
-				      font-style: normal;
-				      font-weight: normal;
-				      text-decoration: inherit;
-				      display: inline-block;
-				      margin-right: 0.5rem;
-				      color: $red;
-				    }
+				.name {
+					font-size: 1.2rem;
+					font-weight: bold;
 				}
-			}
-			.follow {
-				padding: 2rem 0;
-				p {
-					display: inline-block;
+				.price {
 					color: $red;
-					.round-1 {
-						margin-left: 1rem;
+					font-size: 1.5rem;
+				}
+				.select-col {
+					margin-bottom: 1rem;
+					.w-col {
 						display: inline-block;
-						border: 2px solid $white;
-						width: 40px;
-						height: 40px;
-						-webkit-border-radius: 50%;
-						        border-radius: 50%;
-						i {
-							display: inline-block;
-							color: $white;
-							width: 100%;
-							font-size: 1.3rem;
-							padding-top: 9px;
-							text-align: center;
-						}
+						width: 20px;
+						height: 20px;
+						background: $white;
+						border: 1px solid $red;
+						-webkit-border-radius: 3px;
+						        border-radius: 3px;
+					}
+					.b-col {
+						display: inline-block;
+						width: 20px;
+						height: 20px;
+						background: $black;
+						border: 1px solid $red;
+						-webkit-border-radius: 3px;
+						        border-radius: 3px;
 					}
 				}
 			}
@@ -671,6 +652,27 @@ footer {
 		text-decoration: none;
 		img {
 			max-width: 100%;
+			margin-bottom: 4rem;
+		}
+	}
+	.ftr-nav {
+		margin-bottom: 1rem;
+		h4 {
+			text-align: center;
+			color: $red;
+			//margin-bottom: 0.5rem;
+		}
+		ul {
+			li {
+				display: inline-block;
+				height: 1rem;
+				a {
+					text-decoration: none;
+					display: inline-block;
+					color: $white;
+					margin-right: 1rem;
+				}
+			}
 		}
 	}
 }
